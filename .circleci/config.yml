@@ -10,8 +10,11 @@ jobs:
           name: Update npm
           command: 'npm install'
       - run:
-          name: Build webpack
-          command: 'npm run start'
+          name: Building
+          command: 'npm run heroku-postbuild'
+      # - run:
+      #     name: Build webpack
+      #     command: 'npm run start'
   
 workflows:
   version: 2
