@@ -3,13 +3,12 @@ version: 2.1
 
 # Orchestrate or schedule a set of jobs, see https://circleci.com/docs/2.0/workflows/
 workflows:
-  # Name the workflow "Welcome"
-  setup:
-    # Run the welcome/run job in its own container
-    steps:
-      - run:
-          name: npm install
-          command: 'npm install'
+  jobs:
+    - setup:
+        steps:
+          - run:
+              name: npm install
+              command: 'npm install'
   build:
     jobs:
       - setup
