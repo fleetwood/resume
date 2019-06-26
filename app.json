@@ -1,0 +1,21 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "HEROKU_API_KEY": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "name": "resume",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
