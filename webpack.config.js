@@ -1,5 +1,6 @@
 // webpack v4
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -13,20 +14,22 @@ module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: root('./dist'),
-    filename: '[name].[hash].js'
+    filename: '[name].js'
   },
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    open: true,
-    hot: true
+    open: true
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         include: root('src/components'),
-        exclude: /node_modules/,
+        exclude: [
+          /node_modules/,
+          root('src/vendor')
+        ],
         use: {
           loader: 'babel-loader'
         }
@@ -44,6 +47,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
     new CleanWebpackPlugin('dist', {}),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
@@ -59,5 +63,11 @@ module.exports = {
       { from: './src/vendor', to: './' }
     ]),
     new WriteFilePlugin()
-  ]
+  ],
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: 'all'
+    },
+  },
 };

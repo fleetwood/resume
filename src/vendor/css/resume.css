@@ -207,13 +207,13 @@ h2.mb-0 {
   text-shadow: 2px 2px 0px #fff;
 }
 h2.mb-0.experience {
-  background-image: url('../img/experience.jpg');
+  background-image: url(./../img/experience.jpg);
 }
 h2.mb-0.interests {
-  background-image: url('../img/interests.jpg');
+  background-image: url(./../img/interests.jpg);
 }
 h2.mb-0.education {
-  background-image: url('../img/education.jpg');
+  background-image: url(./../img/education.jpg);
 }
 
 @media (min-width: 992px) {
@@ -280,7 +280,7 @@ h2.mb-0.education {
     min-width: 18rem;
   }
   #about {
-    background-image: url('../img/about.jpg');
+    background-image: url(./../img/about.jpg);
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: 100%;
