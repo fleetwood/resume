@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "start": "webpack --mode production"
   },
   "dependencies": {
     "autoprefixer": "^8.6.3",

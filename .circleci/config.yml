@@ -11,7 +11,7 @@ jobs:
           command: 'npm install'
       - run:
           name: Build webpack
-          command: 'npm run build'
+          command: 'npm run start'
   
 workflows:
   version: 2
