@@ -1,13 +1,12 @@
-import React from 'react';
+import {utils} from './components/helpers/utils';
 import ReactDOM from 'react-dom';
-import './css/main.css';
 
-class App extends React.Component {
-  render() {
-    return <div> Hello, world! </div>;
-  }
-}
+import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Interests from './components/Interests';
 
-const rootElement = document.getElementById('root');
-
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(About, utils.dom('about'));
+ReactDOM.render(Education, utils.dom('education'));
+ReactDOM.render(Experience, utils.dom('experience'));
+ReactDOM.render(Interests, utils.dom('interests'));

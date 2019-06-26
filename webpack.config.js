@@ -4,12 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+
+const root = (paths) => path.resolve(__dirname, paths);
 
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: root('dist'),
     filename: '[name].[hash].js'
   },
   devtool: 'inline-source-map',
@@ -22,6 +23,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        include: root('src/components'),
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
@@ -29,6 +31,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        include: root('src/css'),
         use: [
           'style-loader',
           MiniCssExtractPlugin.loader,
@@ -49,10 +52,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash(),
-    new StyleLintPlugin({
-      configFile: './stylelint.config.js',
-      files: './src/css/*.css'
-    })
+    new WebpackMd5Hash()
   ]
 };

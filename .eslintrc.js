@@ -27,6 +27,7 @@ module.exports = {
       'warn',
       { vars: 'all', args: 'none', ignoreRestSiblings: false }
     ],
+    'no-important': 'ignore',
     'prettier/prettier': 'error'
   }
 };
