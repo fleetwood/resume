@@ -1,9 +1,9 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "fleetwood-resume",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:marharyta/webpack-boilerplate.git",
-  "author": "Margarita Obraztsova <marharyta.obraztsova@gmail.com>",
+  "repository": "https://github.com/fleetwood/resume.git",
+  "author": "John Fleetwood <wizening@gmail.com>, Margarita Obraztsova <marharyta.obraztsova@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
