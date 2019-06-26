@@ -4,13 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 
 const root = (paths) => path.resolve(__dirname, paths);
 
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: root('dist'),
+    path: root('./dist'),
     filename: '[name].[hash].js'
   },
   devtool: 'inline-source-map',
@@ -31,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: root('src/css'),
+        include: root('src/vendor'),
         use: [
           'style-loader',
           MiniCssExtractPlugin.loader,
@@ -52,6 +54,10 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
+    new CopyPlugin([
+      { from: './src/vendor', to: './' }
+    ]),
+    new WriteFilePlugin()
   ]
 };
