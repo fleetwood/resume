@@ -2,12 +2,16 @@
 version: 2.1
 jobs:
   setup:
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
       - run:
           name: Update npm
           command: 'npm install'
   build:
+    docker:
+      - image: circleci/node:latest
     steps:
       - run:
           name: Build webpack
