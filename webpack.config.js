@@ -12,7 +12,7 @@ module.exports = {
         rules: [{
             loader: 'babel-loader',
             test: /\.js$/,
-            include: path.resolve(__dirname, 'components'),
+            include: './components',
             exclude: /node_modules/,
             options: {
               presets: ['react']

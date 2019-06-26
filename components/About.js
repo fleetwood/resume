@@ -14,8 +14,8 @@ const About = {
             </a>
         </div>
     </span>,
-    content: <span>
-        <p>Write some stuff</p>
-    </span>
+    content: <div className="about-content">
+                <p>20-year engineer and tech leader, focusing on <a href="https://www.greenleaf.org/what-is-servant-leadership/">servant leadership</a> and collaborative, predictable, measurable results.</p>
+            </div>
 }
 export default (<Section title={About.title} titleClass='about' sub={About.sub} content={About.content} />);
