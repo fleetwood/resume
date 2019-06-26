@@ -1,7 +1,7 @@
 # Use the latest 2.1 version of CircleCI pipeline processing engine, see https://circleci.com/docs/2.0/configuration-reference/
 version: 2.1
 jobs:
-  setup:
+  build:
     docker:
       - image: circleci/node:latest
     steps:
@@ -9,10 +9,6 @@ jobs:
       - run:
           name: Update npm
           command: 'npm install'
-  build:
-    docker:
-      - image: circleci/node:latest
-    steps:
       - run:
           name: Build webpack
           command: 'npm run build'
@@ -21,7 +17,4 @@ workflows:
   version: 2
   deploy:
     jobs:
-      - setup
-      - build:
-          requires:
-            - setup
+      - build
