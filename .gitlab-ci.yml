@@ -19,7 +19,7 @@ production:
   type: deploy
   stage: production
   script:
-    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/resume.git
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/fleetwood.git
     - git push -f heroku master
   only:
     - master
