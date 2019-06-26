@@ -1,3 +1,2 @@
-# resume
-
-Online resume with React.
+Submodule of webpack-bolierplate.
+https://github.com/marharyta/webpack-boilerplate
