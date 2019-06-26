@@ -1,0 +1,33 @@
+{
+  "name": "john-fleetwood",
+  "version": "1.0.0",
+  "description": "Online resume",
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "serve": "cd ./public && live-server",
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "live-server": "^1.2.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "webpack": "^4.35.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "webpack-cli": "^3.3.5"
+  }
+}
