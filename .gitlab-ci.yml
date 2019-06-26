@@ -13,7 +13,7 @@ init:
 build:
   stage: build
   script:
-    - npm run build
+    - npm run build-babel
 
 production:
   type: deploy
