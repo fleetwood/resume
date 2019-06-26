@@ -1,2 +1,1 @@
-Submodule of webpack-bolierplate.
-https://github.com/marharyta/webpack-boilerplate
+Resume for John Fleetwood in react
