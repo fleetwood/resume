@@ -6,7 +6,7 @@
   "author": "John Fleetwood <wizening@gmail.com>, Margarita Obraztsova <marharyta.obraztsova@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --open --watch",
     "heroku-postbuild": "webpack --mode production",
     "start": "node server.js"
   },

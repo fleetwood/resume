@@ -52,7 +52,7 @@ const content = (
                     </ul>
                 </span>
             }
-            tenure='Jul 2018 - May 2019' />
+            tenure='May 2015 - Mar 2018' />
 
         <ResumeItem
             title='Engineering Manager'
