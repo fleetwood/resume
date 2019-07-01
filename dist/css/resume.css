@@ -195,10 +195,39 @@ h2.mb-0.about {
   color: rgba(254, 95, 85, 1);
 }
 .interest-item {
+  transition: all 0.8s;
   border-color: rgba(254, 95, 85, 1) !important;
-  border-width: 0.3rem !important;
+  border-width: 2px !important;
   border-radius: 20px !important;
+  background-color: rgba(181, 218, 189, 0.2);
+  min-height: 200px;
 }
+.interest-item p {
+  transition: all 0.8s;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+.interest-item .item-bg {
+  border-radius: 18px;
+  position: relative;
+  opacity: 0.1;
+  transition: all 0.8s;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.interest-item:hover h5, .interest-item:hover p {
+  transition: all 0.8s;
+  color: rgba(181, 218, 189, 0.2) !important;
+}
+.interest-item:hover .item-bg {
+  opacity: 1;
+  transition: all 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 h2.mb-0 {
   background-repeat: no-repeat;
   background-position-x: center;
