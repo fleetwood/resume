@@ -15,7 +15,8 @@ const skills = [
     'wp',
     'gulp',
     'grunt',
-    'npm'
+    'npm',
+    'python'
 ];
 const Skills = {
         title: 'Skills',
