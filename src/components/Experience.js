@@ -7,6 +7,37 @@ const content = (
     <span>
         <ResumeItem
             title='Engineering Manager'
+            company='Peloton'
+            anchor='peloton'
+            description={
+                <span>
+                    <SkillList skills={
+                        ['aws', 'confluence', 'docker', 'git', 'jira', 'python', 'react', 'slack']
+                    } size='sm' />
+                    <ul className="skill-list">
+                        <li>Redefined Agile processes and workflow (Jira, Kanban, Tribes)</li>
+                        <li>Led organization's largest FSDLC product team</li>
+                        <li>Collaborated with product owners</li>
+                        <ul>
+                            <li>Gathering and refining requirements</li>
+                            <li>Quarterly and weekly planning</li>
+                            <li>Restructured team to match product and technical needs</li>
+                        </ul>
+                        <li>Career coaching, building professional goals in alignment with product and organizational initiatives</li>
+                        <li>Providing (servant) leadership for ailing teams to reconstruct, build morale, and increase productivity</li>
+                        <li>Initiated cross-team working groups</li>
+                        <ul>
+                            <li>Designed working group process</li>
+                            <li>Created and documented standards for subsequent groups to follow</li>
+                            <li>Led first group in successful rethink of Pagerduty process</li>
+                        </ul>
+                    </ul>
+                </span>
+            }
+            tenure='Jun 2019 - Present' />
+            
+        <ResumeItem
+            title='Engineering Manager'
             company='ActiveCampaign'
             anchor='activecampaign'
             description={
@@ -24,8 +55,8 @@ const content = (
                         </ul>
                         <li>Led two product teams in FSDLC of greenfield and feature</li>
                         <li>Drove efforts to refine and streamline development lifecycle and workflow</li>
-                        <li>Career coaching, building professional goals in alignment with product and organizational initiatives</li>
-                        <li>Providing (servant) leadership for ailing teams to reconstruct, build morale, and increase productivity</li>
+                        <li>Career coaching, building professional goals and roadmaps</li>
+                        <li>Providing (servant) leadership for ailing teams</li>
                     </ul>
                 </span>
             }
@@ -52,7 +83,7 @@ const content = (
                     </ul>
                 </span>
             }
-            tenure='May 2015 - Mar 2018' />
+            tenure='May 2015 - May 2018' />
 
         <ResumeItem
             title='Engineering Manager'
@@ -76,7 +107,7 @@ const content = (
                     </ul>
                 </span>
             }
-            tenure={<span>Jul 2014 - Apr 2015 and <i>Feb 2008 - Feb 2012</i></span>}
+            tenure={<span>Feb 2008 - Apr 2015</span>}
             />
 
         <ResumeItem

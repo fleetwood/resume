@@ -10,11 +10,11 @@ const guid = (salt = 'XXXXXX-99999-XXXXXX', lower = true) => {
     const vals = salt.split(sep)
         , alpha = (lower ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ').split('')
         , pad = (val, len) => {
-            let res = val.toString();
+            let res = '';
             while (res.length < len) {
-                res = `0${res}`;
+                res += '0';
             }
-            return res;
+            return `${res}${val.toString()}`;
         };
     return vals.map(r =>
         isNaN(r)
@@ -60,7 +60,8 @@ const skillIcon = (skill, size) => {
         react: { css: 'fa-react', tooltip: 'React' },
         sass: { css: 'fa-sass', tooltip: 'SASS' },
         slack: { css: 'fa-slack', tooltip: 'Slack' },
-        wp: { css: 'fa-wordpress', tooltip: 'WordPress' }
+        wp: { css: 'fa-wordpress', tooltip: 'WordPress' },
+        python: { css: 'fa-python', tooltip: 'Python' }
     };
     const fa = (s) => {
         switch (s) {
