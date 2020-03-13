@@ -1,10 +1,10 @@
 import React from 'react';
-import { Section, config } from './Section';
+import { Section, config, parse } from './Section';
 
 const About = {
-    title: <span>{config.About.title}<hr /></span>,
+    title: <span>{parse(config.About.title)}<hr /></span>,
     sub: <span>
-        <p className="about-content">{config.About.sub}</p>
+        <p className="about-content">{parse(config.About.sub)}</p>
         <div className="social-icons">
             <a href="https://www.linkedin.com/in/jfleetwood/">
                 <i className="fab fa-linkedin-in"></i>
@@ -15,7 +15,7 @@ const About = {
         </div>
     </span>,
     content: 
-        <p className="about-content">{config.About.content}</p>
+        <p className="about-content">{parse(config.About.content)}</p>
 }
 
 export default (<Section title={About.title} titleClass='about' sub={About.sub} content={About.content} />);

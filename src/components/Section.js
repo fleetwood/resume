@@ -1,6 +1,8 @@
 import React from 'react';
-// import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 import * as config from './../config.json';
+
+const parse = (val) => (ReactHtmlParser(val));
 
 const Section = (props) => {
     const mainClass = `w-100 ${props.mainClass || ''}`;
@@ -20,4 +22,4 @@ Section.defaultProps = {
     title: <span>Title</span>
 }
 
-export { Section, config };
+export { Section, config, parse };
