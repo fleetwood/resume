@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './Section';
 import ResumeItem from './ResumeItem';
-import SkillList from './SkillList';
+import SkillList from './Skill.List';
 
 const content = (
     <span>

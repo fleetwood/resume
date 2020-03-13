@@ -235,6 +235,10 @@ h2.mb-0 {
   background-size: auto;
   text-shadow: 2px 2px 0px #fff;
 }
+h2.mb-0.skills {
+  background-image: url(./../img/experience.jpg);
+  background-size: 100%;
+}
 h2.mb-0.experience {
   background-image: url(./../img/experience.jpg);
   background-size: 100%;

@@ -153,7 +153,7 @@ li.nav-item.sub-nav {
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-  max-width: 75rem;
+  width: 100%;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -235,14 +235,21 @@ h2.mb-0 {
   background-size: auto;
   text-shadow: 2px 2px 0px #fff;
 }
+h2.mb-0.skills {
+  background-image: url(./../img/experience.jpg);
+  background-size: 100%;
+}
 h2.mb-0.experience {
   background-image: url(./../img/experience.jpg);
+  background-size: 100%;
 }
 h2.mb-0.interests {
   background-image: url(./../img/interests.jpg);
+  background-size: 100%;
 }
 h2.mb-0.education {
   background-image: url(./../img/education.jpg);
+  background-size: 100%;
 }
 
 @media (min-width: 992px) {

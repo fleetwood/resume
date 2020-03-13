@@ -1,6 +1,6 @@
 import React from 'react';
 import {utils} from './helpers/utils';
-import SkillItem from './SkillItem';
+import SkillItem from './Skill.ListItem';
 
 const SkillList = (props) => {
     return (
@@ -10,7 +10,7 @@ const SkillList = (props) => {
     )
 }
 SkillList.defaultProps = {
-    skills: []
+    props: []
 }
 
 export default SkillList;
