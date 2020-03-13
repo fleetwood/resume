@@ -15,6 +15,7 @@ const Section = (props) => {
             {props.sub && <div className={subClass}>{props.sub}</div>}
             {props.content && <div className={contentClass}>{props.content}</div>}
             {props.custom && <div className={props.customClass || ''}>{props.custom}</div>}
+            {props.children}
         </div>
     )
 }
