@@ -5,7 +5,7 @@ import { utils } from './helpers/utils';
 const RecursiveList = (props) => {
     const css = props.css ? props.css : '';
     return (
-        <ul key={utils.numGuid()}>
+        <ul key={utils.numGuid()} className={css}>
             {props.items.map(item => {
                 if(Array.isArray(item)) {
                     return RecursiveList({items:item});

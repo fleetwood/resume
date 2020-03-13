@@ -199,5 +199,68 @@
                 ]
             }
         ]
+    },
+    "Education": {
+        "title": "Education",
+        "history": [
+            {
+                "title": "Real-world",
+                "company": "",
+                "description": "15 years engineering, 6 years tech leadership.",
+                "tenure": "1999 - Present"
+            },
+            {
+                "title": "Polymath",
+                "company": "",
+                "description": "Insatiable curiosity, perpetual learner.",
+                "tenure": "1972 - Present"
+            },
+            {
+                "title": "Joliet West High School",
+                "company": "General Diploma",
+                "description": "3.82 GPA. Early graduate with honors, top 2% of class.",
+                "tenure": "1986 - 1989"
+            }
+        ]
+    },
+    "Interests": {
+        "title": "Interests",
+        "interests": [
+            {
+                "title": "Coding",
+                "description": "For work and for fun.",
+                "image": "coding.jpg"
+            },
+            {
+                "title": "Writing",
+                "description": "My lady and I are writing a romance novel.",
+                "image": "writing.jpg"
+            },
+            {
+                "title": "Tattooing",
+                "description": "We tattoo, too.",
+                "image": "tattoo.jpg"
+            },
+            {
+                "title": "Music",
+                "description": "I fake guitar pretty well.",
+                "image": "music.jpg"
+            },
+            {
+                "title": "Illustration",
+                "description": "Been published a few times.",
+                "image": "illustration.jpg"
+            },
+            {
+                "title": "Feminism",
+                "description": "Affects 51% of us directly, 49% indirectly.",
+                "image": "feminism.jpg"
+            },
+            {
+                "title": "Philosophy",
+                "description": "Ethical quandaries and Gestaltzerfalls.",
+                "image": "philosophy.jpg"
+            }
+        ]
     }
 }

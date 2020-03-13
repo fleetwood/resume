@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactHtmlParser from 'react-html-parser';
 import SkillList from './Skill.List';
 import RecursiveList from './RecursiveList';
 
@@ -13,6 +14,8 @@ const tenure = (prop) => {
         return (<div></div>)
     }
 }
+
+const company = (prop) => ( <div className="subheading col-lg">{prop || ''}</div> )
 
 const experience = (history) => {
     if (history.history) {
@@ -30,9 +33,10 @@ const experience = (history) => {
             <span>
                 <h3 className="mb-0">{history.title}</h3>
                 <div className="row">
-                    <div className="subheading col-lg">{history.company}</div>
+                    {company(history.company)}
                     {tenure(history.tenure)}
                 </div>
+                {history.description}
             </span>
         )
     }
