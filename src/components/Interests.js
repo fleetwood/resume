@@ -9,10 +9,10 @@ const item = (item) => (
     </div>
 );
 
-const Interests = ( 
-    <div className="w-100 d-flex align-items-start align-content-stretch flex-wrap">
+export default (
+    <Section title={config.Interests.title} titleClass='interests'>
+        <div className="w-100 d-flex align-items-start align-content-stretch flex-wrap">
         {config.Interests.interests.map(interest => item(interest))}
-    </div>
-)
-
-export default (<Section title={config.Interests.title} titleClass='interests' content={Interests} />);
+        </div>
+    </Section>
+);

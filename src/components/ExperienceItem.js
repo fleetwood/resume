@@ -43,16 +43,13 @@ const experience = (history) => {
 }
 
 const ExperienceItem = (props) => {
-    const history = props.history || {}
-        , anchor = history.anchor ? history.anchor : ''
-        , tech = history.tech ? history.tech : []
-        , skills = history.skills ? history.skills : [];
+    const history = props.history || {};
     return (
-        <div className="resume-item d-flex flex-column flex-md-row justify-content-between" id={anchor}>
+        <div className="resume-item d-flex flex-column flex-md-row justify-content-between" id={history.anchor || ''}>
             <div className="flex-column container resume-content">
                 {experience(history)}
-                <SkillList skills={tech} size='sm' />
-                <RecursiveList items={skills} css="skill-list" />
+                <SkillList skills={history.tech || []} size='sm' />
+                <RecursiveList items={history.skills || []} css="skill-list" />
             </div>
         </div>
     )
