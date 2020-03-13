@@ -10,11 +10,11 @@ const guid = (salt = 'XXXXXX-99999-XXXXXX', lower = true) => {
     const vals = salt.split(sep)
         , alpha = (lower ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ').split('')
         , pad = (val, len) => {
-            let res = '';
+            let res = val.toString();
             while (res.length < len) {
-                res += '0';
+                res = '0'+res;
             }
-            return `${res}${val.toString()}`;
+            return res;
         };
     return vals.map(r =>
         isNaN(r)
@@ -23,6 +23,7 @@ const guid = (salt = 'XXXXXX-99999-XXXXXX', lower = true) => {
     ).join(sep);
 };
 
+const numGuid = () => guid('99999');
 const log = (str) => console.log(str);
 const jstring = (obj) => JSON.stringify(obj);
 const jobject = (str) => {
@@ -83,6 +84,7 @@ const dom = (id) => document.getElementById(id);
 export const utils = {
     dom,
     guid,
+    numGuid,
     jobject,
     jstring,
     log,

@@ -1,0 +1,203 @@
+{
+    "About": {
+        "title": "John <span className='text-primary'>Fleetwood</span>",
+        "sub": "1520 Concord Dr · Downers Grove, IL 60516 · (331) 233-8935 · <a href=\"mailto:wizening@gmail.com\">wizening@gmail.com</a>",
+        "content": "Twenty-year technologist focused on <a href=''>servant leadership</a>, collaboration, and predictable, measurable results."
+    },
+    "Skills": {
+        "title": "Skills",
+        "sub": "Programming Languages & Tools",
+        "skillList": [
+            "angular",
+            "atlassian",
+            "aws",
+            "bootstrap",
+            "confluence",
+            "docker",
+            "css3",
+            "git",
+            "github",
+            "gitlab",
+            "gulp",
+            "grunt",
+            "html5",
+            "jira",
+            "jquery",
+            "js",
+            "less",
+            "node",
+            "npm",
+            "php",
+            "react",
+            "sass",
+            "slack",
+            "wp",
+            "python"
+        ],
+        "skillGroups": [
+            {
+                "title": "Workflow",
+                "skills": [
+                    "Mobile-First, Responsive Design",
+                    "Cross Browser Testing & Debugging",
+                    "Cross Functional Teams",
+                    "Agile Development & Scrum"
+                ]
+            },
+            {
+                "title": "Agile",
+                "skills": [
+                    "Mobile-First, Responsive Design",
+                    "Cross Browser Testing & Debugging",
+                    "Cross Functional Teams",
+                    "Agile Development & Scrum"
+                ]
+            }
+        ]
+    },
+    "Experience": {
+        "title": "Experience",
+        "history": [
+            {
+                "title": "Engineering Manager",
+                "company": "Peloton",
+                "anchor": "peloton",
+                "tech": [
+                    "aws",
+                    "confluence",
+                    "docker",
+                    "git",
+                    "jira",
+                    "python",
+                    "react",
+                    "slack"
+                ],
+                "skills": [
+                    "Redefined Agile processes and workflow (Jira, Kanban, Tribes)",
+                    "Led organization's largest FSDLC product team",
+                    "Collaborated with product owners",
+                    [
+                        "Gathering and refining requirements",
+                        "Quarterly and weekly planning",
+                        "Restructured team to match product and technical needs"
+                    ],
+                    "Career coaching, building professional goals in alignment with product and organizational initiatives",
+                    "Providing (servant) leadership for ailing teams to reconstruct, build morale, and increase productivity",
+                    "Initiated cross-team working groups",
+                    [
+                        "Designed working group process",
+                        "Created and documented standards for subsequent groups to follow",
+                        "Led first group in successful rethink of Pagerduty process"
+                    ]
+                ],
+                "tenure": "Jun 2019 - Present"
+            },
+            {
+                "title": "Engineering Manager",
+                "company": "ActiveCampaign",
+                "anchor": "activecampaign",
+                "tech": [
+                    "aws",
+                    "confluence",
+                    "docker",
+                    "git",
+                    "gitlab",
+                    "jira",
+                    "php",
+                    "react",
+                    "slack"
+                ],
+                "skills": [
+                    "Participated in and defined Agile processes (Scrum, Jira, Kanban)",
+                    "Collaborated with product owners and development teams",
+                    [
+                        "Gathering and refining requirements",
+                        "Defining short- and long-term feature roadmaps",
+                        "Defining and implementing SLAs/KPIs"
+                    ],
+                    "Led two product teams in FSDLC of greenfield and feature",
+                    "Drove efforts to refine and streamline development lifecycle and workflow",
+                    "Career coaching, building professional goals and roadmaps",
+                    "Providing (servant) leadership for ailing teams"
+                ],
+                "tenure": "Jul 2018 - May 2019"
+            },
+            {
+                "title": "Senior Software Engineer",
+                "anchor": "conversant",
+                "company": "Conversant",
+                "tech": [
+                    "angular",
+                    "confluence",
+                    "docker",
+                    "git",
+                    "gulp",
+                    "jira",
+                    "js",
+                    "node",
+                    "npm",
+                    "react",
+                    "slack"
+                ],
+                "skills": [
+                    "Node JS, Automation, Unit Testing, Data Structuring, Profiling, Performance Tuning",
+                    "Participated in and promoted Agile processes (Jira, Kanban, Stash)",
+                    "Worked with product owners and development teams to gather and refine requirements, and see development through to QA, deployment and ongoing maintenance, CI/CD.",
+                    "Participated in ongoing research and evaluation of new technologies",
+                    "Led performance initiatives surrounding scalability and user experience",
+                    "Collaborated across multiple teams in architecting new solutions",
+                    "Drove efforts to reduce inefficiencies in development, QA and deployment processes.",
+                    "Coaching and mentoring junior and mid-level software engineers."
+                ],
+                "tenure": "May 2015 - May 2018"
+            },
+            {
+                "title": "Engineering Manager",
+                "company": "Abelson Taylor",
+                "anchor": "abelsontaylor",
+                "tech": [
+                    "confluence",
+                    "git",
+                    "js",
+                    "jquery",
+                    "css3",
+                    "html5"
+                ],
+                "skills": [
+                    "Staff Management (4-12 Engineers, Associate-Senior Developers)",
+                    "Client and Internal Business & Systems analysis",
+                    "&gt;$2Mil new business won on client pitches",
+                    "Requirements Documentation (Functional, Business, Security, QA/Testing, Standards)",
+                    "Client and Agency liaison (Analysis, Documentation, Remediation, RFP and Pitches)",
+                    "Introduced new technologies and process improvements; Source Control, Virtualization, Documentation",
+                    "Large-scale system design and implementation",
+                    "Management in a fast-paced, waterfall environment, between 4 and 10+ developers, 20-100 concurrent projects",
+                    "Responsible for staffing direction and decisions, new direction and future planning, resource allocation"
+                ],
+                "tenure": "Feb 2008 - Apr 2015"
+            },
+            {
+                "title": "Also",
+                "anchor": "also",
+                "history": [
+                    {
+                        "title": ".NET Architect",
+                        "company": "Alpha Zeta"
+                    },
+                    {
+                        "title": "Freelance Engineer, Business Strategist",
+                        "company": "elevenzero"
+                    },
+                    {
+                        "title": "Senior Developer",
+                        "company": "b|Media"
+                    },
+                    {
+                        "title": "Developer",
+                        "company": "IBM"
+                    }
+                ]
+            }
+        ]
+    }
+}
