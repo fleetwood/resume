@@ -2,11 +2,11 @@
     "About": {
         "title": "John <span className='text-primary'>Fleetwood</span>",
         "sub": "1520 Concord Dr · Downers Grove, IL 60516 · (331) 233-8935 · <a href=\"mailto:wizening@gmail.com\">wizening@gmail.com</a>",
-        "content": "Twenty-year technologist focused on <a href=''>servant leadership</a>, collaboration, and predictable, measurable results."
+        "content": "Twenty-year technologist focused on <a href=''>servant leadership</a>, collaboration, and predictable, measurable results.<br /><br /><strong>TODO</strong><br/><ul><li>Fix font size</li><li>Nested arrays in Skills</li><li>Routing</li></ul>"
     },
     "Skills": {
         "title": "Skills",
-        "sub": "Programming Languages & Tools",
+        "sub": "Quick overview of what I do",
         "skillList": [
             "angular",
             "atlassian",
@@ -35,22 +35,52 @@
             "python"
         ],
         "skillGroups": [
+            
             {
-                "title": "Workflow",
+                "title": "Leadership",
                 "skills": [
-                    "Mobile-First, Responsive Design",
-                    "Cross Browser Testing & Debugging",
-                    "Cross Functional Teams",
-                    "Agile Development & Scrum"
+                    "Servant leadership",
+                    [
+                        "Coach and mentor",
+                        "Managing stress and workload",
+                        "Seeing opportunity in challenges",
+                        "Impassioned diversity advocate"
+                    ],
+                    "Team building",
+                    [
+                        "Vision, Strategy, Planning",
+                        "Team structure and growth",
+                        "Process and workflow",
+                        "Career roadmapping",
+                        "Cross functional communication"
+                    ],
+                    "Agile Coach"
                 ]
             },
             {
-                "title": "Agile",
+                "title": "Tech",
                 "skills": [
-                    "Mobile-First, Responsive Design",
-                    "Cross Browser Testing & Debugging",
-                    "Cross Functional Teams",
-                    "Agile Development & Scrum"
+                    "Languages",
+                    [
+                        "Node",
+                        "Javascript",
+                        "C#"
+                    ],
+                    "Data",
+                    [
+                        "Postgres",
+                        "SQL"
+                    ],
+                    "Platforms",
+                    [
+                        "React",
+                        "Knex"
+                    ],
+                    "Tools",
+                    [
+                        "AWS",
+                        "Git (CLI, Github, Gitlab)"
+                    ]
                 ]
             }
         ]
@@ -243,7 +273,7 @@
             },
             {
                 "title": "Music",
-                "description": "I fake guitar pretty well.",
+                "description": "I'm not terrible at guitar.",
                 "image": "music.jpg"
             },
             {
