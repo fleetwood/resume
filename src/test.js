@@ -2,6 +2,6 @@ import {utils} from './components/helpers/utils';
 import ReactDOM from 'react-dom';
 
 // TODO: autogenerate
-import About from './components/About';
+import Test from './components/Test';
 
-ReactDOM.render(About, utils.dom('about'));
+ReactDOM.render(Test, utils.dom('test'));

@@ -5,22 +5,18 @@ import * as config from './../config.json';
 const parse = (val) => (ReactHtmlParser(val));
 
 const Section = (props) => {
-    const mainClass = `w-100 ${props.mainClass || ''}`;
-    const titleClass = `mb-0 ${props.titleClass || ''}`;
+    const sectionClass = `w-100 ${props.sectionClass || ''}`;
+    const headingClass = `mb-0 ${props.headingClass || ''}`;
     const subClass = `subheading mb-5 ${props.subClass || ''}`;
     const contentClass = `lead mb-5 ${props.contentClass || ''}`;
     return (
-        <div className={mainClass}>
-            <h2 className={titleClass}>{props.title}</h2>
-            {props.sub && <div className={subClass}>{props.sub}</div>}
+        <div className={sectionClass}>
+            {props.head && <h2 className={headingClass}>{props.head}</h2>}
+            {props.subHead && <div className={subClass}>{props.subHead}</div>}
             {props.content && <div className={contentClass}>{props.content}</div>}
-            {props.custom && <div className={props.customClass || ''}>{props.custom}</div>}
             {props.children}
         </div>
     )
-}
-Section.defaultProps = {
-    title: <span>Title</span>
 }
 
 export { Section, config, parse };

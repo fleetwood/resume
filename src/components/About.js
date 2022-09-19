@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, config, parse } from './Section';
-
+//TODO: Break this out into a section directory
 export default (
     <Section title={parse(config.About.title)} titleClass='about'>
         <p className="about-content">{parse(config.About.sub)}</p>
